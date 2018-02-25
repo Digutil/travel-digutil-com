@@ -1,5 +1,43 @@
 app-home {
   ion-scroll {
-    padding: 15px;
+    background-image:
+      linear-gradient(
+          to right,
+          #222222 50%,
+          #dfca96,
+          #f6d79a 10%,
+          #c4b486
+      );
   }
+
+  ion-grid {
+    padding: 0;
+    max-width: 600px;
+
+    ion-col {
+      font-size: 24px;
+    }
+
+    [col-6] {
+      padding: 8px 16px;
+    }
+  }
+
+  .dark {
+    text-align: left;
+
+    background: -webkit-linear-gradient(#e7caaa, #c4b486);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .light {
+    text-align: right;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+
 }
